@@ -74,8 +74,10 @@ public class ToolbarFragment extends Fragment implements SeekBar.OnSeekBarChange
         }
     }
 
+
     @Override
     public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+        TEXT_SIZE = i;
 
     }
 
