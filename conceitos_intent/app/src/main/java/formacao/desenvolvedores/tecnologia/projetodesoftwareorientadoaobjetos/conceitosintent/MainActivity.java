@@ -1,9 +1,16 @@
 package formacao.desenvolvedores.tecnologia.projetodesoftwareorientadoaobjetos.conceitosintent;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText edtPergunta;
     private TextView tvExibirResposta;
     private ImageButton imageLimparPergunta;
+    private ActivityResultLauncher<Intent> activityResultLauncher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,15 +45,20 @@ public class MainActivity extends AppCompatActivity {
         btnPergunta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!edtPergunta.getText().toString().isEmpty()){
-                    Intent intent = new Intent(MainActivity.this, RespostaActivity.class);
+                if (!edtPergunta.getText().toString().isEmpty()) {
+                    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) {
+                        Intent intent = new Intent(MainActivity.this, RespostaActivity.class);
 
-                    String myString = edtPergunta.getText(). toString();
-                    intent.putExtra("Pergunta", myString);
+                        String myString = edtPergunta.getText().toString();
+                        intent.putExtra("Pergunta", myString);
 
-                    startActivityForResult(intent, REQUEST_CODE);
+                        startActivityForResult(intent, REQUEST_CODE);
+                    } else {
+                        openActivityForResult();
 
-                } else{
+                    }
+
+                } else {
                     Toast.makeText(MainActivity.this, "Por favor, digite uma pergunta", Toast.LENGTH_LONG).show();
                 }
             }
@@ -58,6 +71,19 @@ public class MainActivity extends AppCompatActivity {
                 tvExibirResposta.setText("");
             }
         });
+
+        activityResultLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                new ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult result) {
+                        if (result.getResultCode() == Activity.RESULT_OK) {
+                            Intent data = result.getData();
+                            tvExibirResposta.setText(data.getExtras().getString("recuperarResposta"));
+                    }
+                }
+             });
+
     }
 
     @Override
@@ -81,7 +107,18 @@ public class MainActivity extends AppCompatActivity {
                     edtPergunta.setText(perguntaRetornada);
                 }
             }
-
         }
+    }
+
+    private void openActivityForResult() {
+        Intent intent = new Intent(MainActivity.this, RespostaActivity.class);
+
+        /*String myString = edtPergunta.getText().toString();
+        intent.putExtra("Pergunta", myString);*/
+
+        intent.putExtra("Pergunta", edtPergunta.getText().toString());
+
+        activityResultLauncher.launch(intent);
+
     }
 }
