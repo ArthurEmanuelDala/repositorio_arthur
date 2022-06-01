@@ -10,8 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,8 +21,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    private static final int REQUEST_CODE = 5;
+import formacao.desenvolvedores.tecnologia.projetodesoftwareorientadoaobjetos.conceitosintent.utils.app.UtilsApp;
+
+public class MainActivity extends AppCompatActivity { //public/protrected/private é um modificador de acesso
+    private static final int REQUEST_CODE = 5;        // class: Palavra reservada que define uma classe
+    private static final String TAG = "";
     private Button btnPergunta;
     private EditText edtPergunta;
     private TextView tvExibirResposta;
@@ -84,6 +89,26 @@ public class MainActivity extends AppCompatActivity {
                 }
              });
 
+        UtilsApp utilsApp = new UtilsApp();
+        Log.d(TAG, "Valor convertido de tipos primitivos double p/ int: "
+                + utilsApp.convertToInt(5.1987));
+
+        byte b = -39;
+        Log.d(TAG, "Valor convertido de tipos primitivos byte p/ int: "
+                + utilsApp.convertToInt(b));
+
+        short valorShort = -1983;
+        Log.d(TAG, "Valor convertido de tipos primitivos short p/ int: "
+                + utilsApp.convertToInt(valorShort));
+
+        char F = 16;
+        Log.d(TAG, "Valor convertido de tipos primitivos char p/ int: "
+                + utilsApp.convertToInt(F));
+
+        long valorLong = 35451454354684L;
+        Log.d(TAG, "Valor convertido de tipos primitivos long p/ int: "
+                + utilsApp.convertToInt(valorLong));
+
     }
 
     @Override
@@ -112,9 +137,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void openActivityForResult() {
         Intent intent = new Intent(MainActivity.this, RespostaActivity.class);
-
-        /*String myString = edtPergunta.getText().toString();
-        intent.putExtra("Pergunta", myString);*/
 
         intent.putExtra("Pergunta", edtPergunta.getText().toString());
 
