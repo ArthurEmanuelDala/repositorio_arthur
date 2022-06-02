@@ -1,6 +1,6 @@
 package formacao.desenvolvedores.tecnologia.projetodesoftwareorientadoaobjetos.conceitosintent;
 
-import androidx.activity.result.ActivityResult;
+import  androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
