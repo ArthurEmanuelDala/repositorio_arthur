@@ -94,6 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
         android:hint="Resultado da operação matemática"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/btnCalcular"
         app:layout_constraintStart_toStartOf="@+id/btnCalcular"
         app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
