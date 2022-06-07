@@ -1,8 +1,10 @@
 package emanuel.arthur.uno.calcular;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,22 +16,27 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    public static final String DIVISAO       = "divisao";
-    public static final String MULTIPLICACAO = "Multiplicação";
-    public static final String SOMA          = "Soma";
-    public static final String SUBTRACAO     = "Subtração";
+    public static final String TAG           = "MainActivity";
+    public static final String DIVISAO       = "Dividir";
+    public static final String MULTIPLICACAO = "Multiplicar";
+    public static final String SOMA          = "Somar";
+    public static final String SUBTRACAO     = "Subtrair";
     private Spinner spiOpcoes;
     private EditText edtOperando01, edtOperando02;
     private ImageView imgOperacao;
     private TextView tvResultado;
     private Button btnCalcular;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null){
+            actionBar.setTitle("Calcular");
+        }
 
         spiOpcoes     = findViewById(R.id.spiOpcoes);
         edtOperando01 = findViewById(R.id.edtOperando1);
@@ -48,25 +55,28 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spiOpcoes.setAdapter(adapterOperacoes);
         spiOpcoes.setOnItemSelectedListener(this);
 
-        //PEGA A OPCAO SELECIONADA DO SPINNER
-        String operacaoSelecionada = spiOpcoes.getSelectedItem().toString();
+
 
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                //PEGA A OPCAO SELECIONADA DO SPINNER
+                String operacaoSelecionada = spiOpcoes.getSelectedItem().toString();
+
                 if (operacaoSelecionada == DIVISAO) {// == "divisao"
-                }
 
-                if (operacaoSelecionada == MULTIPLICACAO) {// == "Multiplicação"
-                }
 
-                if (operacaoSelecionada == SOMA) {// == "Soma"
-                }
+            }else if(operacaoSelecionada == MULTIPLICACAO) {// == "Multiplicação"
 
-                if (operacaoSelecionada == SUBTRACAO) {// == "Subtração"
-                }
+            }else if(operacaoSelecionada == SOMA) {// == "Soma"
 
+            }else if(operacaoSelecionada == SUBTRACAO) {// == "Subtração"
+
+            }else {
+               Toast.makeText(MainActivity.this, "Por favor, selecione uma operação disponivel",
+                       Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -74,10 +84,28 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        Toast.makeText(this, "Somar", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this,adapterView.getItemAtPosition(i).toString(),
+                Toast.LENGTH_SHORT).show();
 
+        if(adapterView.getItemAtPosition(i).toString().equals(DIVISAO)){
+            imgOperacao.setImageDrawable(getResources().getDrawable(R.drawable.divisao, getTheme()));
+            imgOperacao.setVisibility(View.VISIBLE);
 
+        } else if(adapterView.getItemAtPosition(i).toString().equals(MULTIPLICACAO)){
+            imgOperacao.setImageDrawable(getResources().getDrawable(R.drawable.multiplica, getTheme()));
+            imgOperacao.setVisibility(View.VISIBLE);
 
+        } else if(adapterView.getItemAtPosition(i).toString().equals(SOMA)){
+            imgOperacao.setImageDrawable(getResources().getDrawable(R.drawable.soma, getTheme()));
+            imgOperacao.setVisibility(View.VISIBLE);
+
+        } else if(adapterView.getItemAtPosition(i).toString().equals(SUBTRACAO)){
+            imgOperacao.setImageDrawable(getResources().getDrawable(R.drawable.subtracao, getTheme()));
+            imgOperacao.setVisibility(View.VISIBLE);
+
+        } else{
+            Log.d(TAG, "Nenhuma operação matemática foi selecionada");
+        }
     }
 
     @Override
