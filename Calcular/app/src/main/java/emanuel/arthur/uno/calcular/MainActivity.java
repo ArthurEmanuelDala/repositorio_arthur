@@ -22,6 +22,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public static final String MULTIPLICACAO  = "Multiplicar";
     public static final String SOMA           = "Somar";
     public static final String SUBTRACAO      = "Subtrair";
+    public static final String LOGARITMO      = "Logaritmar";
+    public static final String RAIZ_QUADRADA  = "Extrair";
+    public static final String POTENCIACAO    = "Potenciação";
+    public static final String POTENCIA_DE_10 = "Potencia de 10";
+    public int ZERO = 0;
+    public int DEZ = 10;
     private Spinner spiOpcoes;
     private EditText edtOperando01, edtOperando02;
     private ImageView imgOperacao;
@@ -68,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                 //tvResultado.setText("Digite um valor válido");
 
+
                 if (operacaoSelecionada.equals(DIVISAO)) {// == "divisao"
                     if(validarTermosVazios()) {
                         if(validarDivisor()) {
@@ -110,6 +117,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     Toast.makeText(MainActivity.this, "Por favor, selecione uma operação disponivel",
                             Toast.LENGTH_LONG).show();
                 }
+
             }
         });
 
@@ -155,6 +163,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             edtOperando01.setHint("Minuendo");
             edtOperando02.setHint("Subtraendo");
 
+        } else if (adapterView.getItemAtPosition(i).toString().equals(LOGARITMO)) {
+            imgOperacao.setImageDrawable(getResources().getDrawable(R.drawable.logaritmo, getTheme()));
+            imgOperacao.setVisibility(View.VISIBLE);
+            edtOperando01.setHint("Logaritmando");
+            edtOperando02.setHint("Logaritmando");
+
+        } else if (adapterView.getItemAtPosition(i).toString().equals(RAIZ_QUADRADA)) {
+            imgOperacao.setImageDrawable(getResources().getDrawable(R.drawable.raiz_quadrada, getTheme()));
+            imgOperacao.setVisibility(View.VISIBLE);
+            edtOperando01.setHint("Extrair");
+            edtOperando02.setHint("Extrair");
+
+
         }
     }
 
@@ -194,6 +215,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         return "O resultado da subtração é: " + res;
 
     }
+
 
     private boolean validarTermosVazios(){
         if(!edtOperando01.getText().toString().isEmpty()){
