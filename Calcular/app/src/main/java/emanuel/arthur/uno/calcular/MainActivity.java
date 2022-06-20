@@ -17,14 +17,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    public static final String TAG = "MainActivity";
-    public static final String DIVISAO = "Dividir";
-    public static final String MULTIPLICACAO = "Multiplicar";
-    public static final String SOMA = "Somar";
-    public static final String SUBTRACAO = "Subtrair";
-    public static final String LOGARITMO = "Logaritmar";
-    public static final String RAIZ_QUADRADA = "Extrair";
-    public static final String POTENCIACAO = "Potênciação";
+    public static final String TAG            = "MainActivity";
+    public static final String DIVISAO        = "Dividir";
+    public static final String MULTIPLICACAO  = "Multiplicar";
+    public static final String SOMA           = "Somar";
+    public static final String SUBTRACAO      = "Subtrair";
+    public static final String LOGARITMO      = "Logaritmar";
+    public static final String RAIZ_QUADRADA  = "Extrair";
+    public static final String POTENCIACAO    = "Potênciação";
     public static final String POTENCIA_DE_10 = "Potência de 10";
     public int ZERO = 0;
     public int DEZ = 10;
@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             actionBar.setTitle("Minha Calculadora");
         }
 
-        spiOpcoes = findViewById(R.id.spiOpcoes);
+        spiOpcoes     = findViewById(R.id.spiOpcoes);
         edtOperando01 = findViewById(R.id.edtOperando1);
         edtOperando02 = findViewById(R.id.edtOperando2);
-        imgOperacao = findViewById(R.id.imgOperacao);
-        btnCalcular = findViewById(R.id.btnCalcular);
-        tvResultado = findViewById(R.id.tvResultado);
-        imgLixeiro = findViewById(R.id.imglixeiro);
+        imgOperacao   = findViewById(R.id.imgOperacao);
+        btnCalcular   = findViewById(R.id.btnCalcular);
+        tvResultado   = findViewById(R.id.tvResultado);
+        imgLixeiro    = findViewById(R.id.imglixeiro);
 
         imgOperacao.setVisibility(View.INVISIBLE);
 
@@ -353,6 +353,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             return true;
         } else {
             return false;
+        }
+    }
+
+    private void validarExibicao(boolean blok){
+
+
+
+        if(blok){
+            //edtNumero2.setFocusable(false);
+            //edtNumero2.setKeyListener(null);
+            edtOperando02.setEnabled(false);
+            edtOperando02.setHint("Não editável");
+
+        }else {
+            edtOperando02.setFocusable(true);
+            //edtNumero2.getKeyListener();
+            edtOperando02.setEnabled(true);
         }
     }
 
