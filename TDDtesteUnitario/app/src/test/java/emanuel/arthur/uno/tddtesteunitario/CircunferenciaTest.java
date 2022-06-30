@@ -13,12 +13,13 @@ public class CircunferenciaTest {
     private double area_raio3;
 
 
+
     @Test
     public void deveriaTerUmaMedidaDeRaioMaiorDoQueZeroNoArrayDeMedidas() {
 
         circunferencia.setMedidas(0, 3);
 
-        double raio = circunferencia.getMedida(0);
+        double raio = circunferencia.getMedidas(0);
 
         boolean x = raio > 0;
 
@@ -45,7 +46,7 @@ public class CircunferenciaTest {
         /*Raio armazenado na estrutura de dados da classe pai (Forma)*/
         circunferencia.setMedidas(POSICAO_ZERO, 5);
 
-        double area = Math.PI * Math.pow(circunferencia.getMedida(POSICAO_ZERO), EXPOENTE_2);
+        double area = Math.PI * Math.pow(circunferencia.getMedidas(POSICAO_ZERO), EXPOENTE_2);
 
         //assertEquals("A area de uma circunferência de raio 3 é 28,2743", area_raio3, area, PRECISAO_4_CASAS_DECIMAIS);
         //assertEquals("A area de uma circunferência de raio 4 é 50,2655", area_raio4, area, PRECISAO_4_CASAS_DECIMAIS);
