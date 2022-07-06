@@ -19,7 +19,6 @@ public abstract class Forma {
 
     }
 
-
     public void setMedidas(int posicao, double medida){
         numeroDeMedidas[posicao] = medida;
     }

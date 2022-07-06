@@ -7,40 +7,40 @@ import static org.junit.Assert.*;
 import emanuel.arthur.uno.tddtesteunitario.forma.Retangulo;
 
 public class RetanguloTest {
-    public static final Retangulo retangulo = new Retangulo(2);
-    public static final int PRECISAO_4_CASAS_DECIMAIS = 4;
+    private static Retangulo retangulo = new Retangulo();
+    double DIFERENCA_ACEITAVEL = 0.0001;
 
 
     @Test
-    public void deveriaCalcularArea(){
-        double areaBase2altura6 = 12;
+    public void calcularAreaDoRetangulo(){
+        double area_BaseXAltura = 10;
 
-        retangulo.setMedidas(0, 2); //Base
-        retangulo.setMedidas(1, 6); //Altura
 
+        retangulo.setMedidas(0, 5);
+        retangulo.setMedidas(1, 2);
+
+        //double baser = retangulo.getMedidas(0);
+        //double alturar = retangulo.getMedidas(1);
         double area = retangulo.getMedidas(0) * retangulo.getMedidas(1);
 
-        assertEquals("A area de um retangulo de altura 6 e base 2 é 12", areaBase2altura6, area, PRECISAO_4_CASAS_DECIMAIS);
-
-
+        assertEquals("A area de um retangulo: " + area_BaseXAltura, area_BaseXAltura,
+                area, DIFERENCA_ACEITAVEL);
+        /*Double calculoPapel = new Double(area_BaseXAltura);
+        boolean x = calculoPapel.equals(new Double(area));
+        assertTrue(x);*/
 
     }
 
     @Test
-    public void deveriaCalcularPerimetro(){
-        double perimetroxBase3MaisAltura4 = 24;
+    public void calcularPerimetroRetangulo(){
+        double perimetro_BaseXAlturaY = 14;
 
+        retangulo.setMedidas(0, 2);
+        retangulo.setMedidas(1, 5);
 
-        retangulo.setMedidas(0, 3); //Base
-        retangulo.setMedidas(1, 4); //Altura
+        double perimetro = 2 * (retangulo.getMedidas(0) + retangulo.getMedidas(1));
 
-        double perimetro = retangulo.area() * 2;
-
-        assertEquals("O perímetro vezes a Altura 4 + Base 3 é 13", perimetroxBase3MaisAltura4, perimetro, PRECISAO_4_CASAS_DECIMAIS);
-
-
+        assertEquals("O perimetro de um retangulo de base 5 e altura 2 é: 20", perimetro_BaseXAlturaY,
+                perimetro, DIFERENCA_ACEITAVEL);
     }
-
 }
-
-

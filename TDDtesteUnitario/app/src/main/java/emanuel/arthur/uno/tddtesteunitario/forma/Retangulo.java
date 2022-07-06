@@ -1,13 +1,21 @@
 package emanuel.arthur.uno.tddtesteunitario.forma;
 
 public class Retangulo extends Forma {
-    public Retangulo(int medidas) {
-        super(medidas);
+    private static final int TAMANHO_ARRAY_INFO_CALCULO_AREA_RETANGULO = 2;
+    public static final int BASE = 0;
+    public static final int ALTURA = 0;
+
+    public Retangulo(){
+        super(TAMANHO_ARRAY_INFO_CALCULO_AREA_RETANGULO);
+    }
+
+    public double calcularPerimetro() {
+        return 2 * (getMedidas(BASE) + getMedidas(ALTURA));
     }
 
     @Override
     public double area() {
-        return getMedidas(0) * getMedidas(1);
+        return getMedidas(BASE) * getMedidas(ALTURA);
 
     }
 }
