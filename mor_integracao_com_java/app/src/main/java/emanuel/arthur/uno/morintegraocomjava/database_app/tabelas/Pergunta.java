@@ -4,7 +4,7 @@ import androidx.room.Entity;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "tbl_aluno"
+@Entity(tableName = "tbl_pergunta"
         , indices = {@Index(value = "id", unique = true)})
 
 public class Pergunta {
