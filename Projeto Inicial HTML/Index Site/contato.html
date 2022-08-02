@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "icon" href = "C:\Users\Alunos\Downloads\gremio.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Imortal</title>
+</head>
+<body style="background-color: deepskyblue;">
+    <p>Seja bem-vindo ao site do Imortal</p>
+    <a href="index.html">
+        <b>|HOME  |</b>
+    </a>
+    <a href="somos.html">
+        <b>|QUEM SOMOS|</b>
+    </a>
+    <a href="contato.html">
+        <b>|CONTATO|</b>
+    </a>
+
+    <h2>Entre em contato conosco</h2>
+    <form>
+        <p>
+            Nome:<br>
+            <input type="text" size="30" name:"Nome">
+        </p>
+        <p>
+            Telefone/WhatsApp: <br>
+            <input type="text" size="30" name="Telefone/WhatsApp">
+        </p>
+        <p>
+            Email: <br>
+            <input type="text" size="30" name="E-mail">
+        </p>
+        <p>
+            Comentário: <br>
+            <input type="text" size="30" name="Sugestão/Reclamação">
+        </p>
+        <p>
+            <input type="submit" name="btnEnviar" value="Enviar">
+            <input type="reset" name="btnCancelar" value="Cancelar">
+        </p>
+    </form>
+
+    <h2>Configuração</h2>
+    <form action="acao.php" method="post">
+        Limiar:
+        <input type="range" name="Limiar" min="0" max="100" value="50">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <form name="numero" id="num" method="get">
+        <input type="number" name="num" min="0" max="10" step="1">
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <div align = "center">
+        <form name="calendario" id="cadID" method="get">
+            Selecione uma hora <input type="time" name="miHora">
+            <input type="submit" name="" id="" value="OK">
+        </form>
+    
+    </div>
+    
+    <div align = "center">
+        <form style="background-color: hsl(237, 43%, 90%);">
+            Esta é uma checkBox:
+            <input type="checkbox" name="cor" id="Selcor">
+            Este é um Radio Button
+            <input type="radio" name="cor" id="Selcor">
+            <input type="submit" value="Ok">
+        </form>
+    </div>
+    
+    <di align = "center">
+        <form style="background-color: hwb(340, 32%, 3%);">
+            Seleciona Data, hora:
+            <input type="datetime-local" name="dttm" id="dttm">
+            <input type="submit" value="Ok">
+        </form>
+    </di>
+    
+    <span style="color: black;">
+        <marquee behavior="32%" direction="scrool">
+            <b>
+                <h1>SIIUUUUUUUUUUUUUUUUUU</h1>
+                <img src="C:\Users\Alunos\Downloads\cr7.jpg" width ="300" height ="300" alt="">
+            </b>
+        </marquee>
+       
+    
+    </span>
+
+
+
+
+
+</body>
+</html>
