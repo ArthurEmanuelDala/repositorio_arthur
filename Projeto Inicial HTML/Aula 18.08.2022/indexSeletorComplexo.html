@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Complexo</title>
+
+    <style>
+    /*    ul li{
+            color: blue;
+        }
+    */    
+        tr td{
+            color: darkgreen;
+        }
+
+        ul > li{
+            color: pink;
+
+        }
+
+        h1+p{
+            color: orange;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--Seletor descendente Ex: Seletor 2 descendente seletor 1-->
+    <div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+        </ul>
+    </div>
+    <!--Seletor descendente Ex: Seletor 2 descendente seletor 1-->
+    <table>
+        <tr>
+            <td>Coluna 1</td>
+        </tr>
+        <tr>
+            <td>Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Coluna 4</td>
+        </tr>
+    </table>
+
+    <!--Seletor Filho Ex: Todo seletor 2 deve ser filho de Seletor 1-->
+        <ul>
+            <a href="#"><li>Item 1</li></a>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    <table>
+        <tr>
+            <a href="#"><td>Coluna 1</td></a>
+        </tr>
+        <tr>
+            <td>Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Coluna 4</td>
+        </tr>
+    </table>
+    <!--Seletor imediatamente seguinte Ex: Todo Seletor 2 deve ser imediatamente após Seletor 1-->
+    <h1>Este é exemplo de seletor filhos</h1>
+    <p>Exemplo de CSS</p>
+    
+</body>
+</html>

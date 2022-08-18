@@ -7,48 +7,67 @@
     <title>Cadastro</title>
 
     <style>
+        form {
+            width: 350px;
+            height: 280px;
+            background-color: #e3ebdb;
+            padding: 0px 10px;
+            border-radius: 5px;
+        }
 
-        body{
+        h2{
+            color: #638e99;
+    
+        }
+
+        h5 {
+            font-style: normal;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: rgb(194, 179, 179);
+            color: DimGray;
+        }
+
+        input.dados{
+            padding: 8px;
+            margin: 2px;
+            width: 300px;
+            border-radius: 4px;
+        }
+
+        input.btn {
+            background-color: #638e99;
+            cursor: pointer;
+            padding: 8px 32px;
+            font-size: 16px;
+            color: white;
+            border: 0px;
         }
 
 
-        h3{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-        }
-
-        input.btn-cadastro{
-            background-color: blue;
-        }
     </style>
 
-
-
-
-
-
 </head>
-<body align="center">
-    <h3>CADASTRE-SE</h3>
-    <p>Insira seus dados abaixo para receber as<br>novidades gratuitamente em seu e-mail</p>
-    
+
+<body>
+
     <form>
-        <div>
-            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-        </div>
-        <br>
-        <div>
-            <input type="text" class="form-control" id="e-mail" placeholder="Seu e-mail">
-        </div>
-        <br>
-        <div>
-                <input type="submit" value="Cadastrar" class="btn-cadastro">
-        </div>
+        <h2>CADASTRE-SE</h2>
+
+        <h5>Insira seus dados abaixo para receber as novidades gratuitamente em seu e-mail</h5>
+        <p>
+            <input class="dados" id="nome_login" name="nome_login" required="required" type="text" placeholder="Seu nome" />
+        </p>
+
+        <p>
+            <input class="dados" id="email_login" name="email_login" required="required" type="password" placeholder="Seu e-mail" />
+        </p>
+
+        <p>
+            <input type="submit" value="Cadastrar" class="btn" />
+        </p>
+
     </form>
 
-
-    
 </body>
+
 </html>
+    
