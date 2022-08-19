@@ -1,0 +1,23 @@
+body{
+    background-image: url(../img/madeira.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lbl{
+    color: white;
+}
+
+legend{
+    color: white;
+    font-weight: bold;
+}
+
+.btn-reset{
+    background-color: lightcoral;
+    padding: 8px 25px;
+    font-weight: bold;
+    border: 3px solid white;
+}
+
