@@ -1,32 +1,155 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
+    <title>Produto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-<body style="background-color:beige">
-    <!--Inicio Menu-->
+<body style="background-color:beige;">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" i
+    ntegrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <div class="container">
+
     <table align="left">
         <tr>
             <td align="center">
                 <a href="index.html">
-                    <img src="img/usu.png" width="42" height="36" >
-                    <br>
-                    USUÁRIO
-                </a>
+                    <img src="img/usu.png" width="42" height="36">
+                <br>
+                USUÁRIO
+            </a>
             </td>
             <td align="center">
                 <a href="produto.html">
-                    <img src="img/produto.png" width="42" height="36" >
+                    <img src="img/produto.png" width="42" height="36">
                     <br>
                     PRODUTO
                 </a>
             </td>
         </tr>
-    </table>
-    
+       </table>
+       <br>
+       <h1 align = "center">Cadastro de Produtos</h1>
+       <form action="" method="post">
+        <br>
+        <fieldset>
+            <legend><b>Dados Produto</b></legend>
+            <table cellspacing="10">
+                <tr>
+                    <td>
+                        <label for="descrição">Descrição:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="descrição">
+                    </td>
+                    <td>
+                        <label for="fabricante">Fabricante:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="fabricante">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="datf">Data de Fabricação:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="datf">
+                    </td>
+                    <td>
+                        <label for="datv">Data de Validade:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="datv">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Informações Adicionais</b></legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="código">Código de Barras:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="código">
+                    </td>
+                    <td>
+                        <label for="distribuidora">Distribuidora:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="distribuidora">
+                    </td>
+                    <td>
+                        <label for="vendedor">Nome do Vendedor:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="vendedor">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Valores Produto</b></legend>
+            <tr>
+                <td>
+                    <label for="valorc">Valor de Compra:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="valorc">
+                    </td>
+                    <td>
+                        <label for="valorv">Valor de Venda:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="valorv">
+                        </td>
+                        <td>
+                            <label for="qtd">Quantidade:</label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="qtd">
+                            </td>
+                </tr>
+        </fieldset>
+        <fieldset align = "center">
+            <legend><b>Imagem do Produto</b></legend>
+            <tr>
+                <td>
+                    <a>
+                        <img src="https://explosaodeamor.com.br/uploads/fotos_produtos/20200716_ehkkii3l.jpg" width="250" height="250">
+                    </a>
+                    <a>
+                        <img src="https://explosaodeamor.com.br/uploads/fotos_produtos/20200716_ehkkii3l.jpg" width="230" height="230">
+                    </a>
+                    <a>
+                        <img src="https://explosaodeamor.com.br/uploads/fotos_produtos/20200716_ehkkii3l.jpg" width="250" height="250">
+                    </a>
+                    <a>
+                        <img src="https://explosaodeamor.com.br/uploads/fotos_produtos/20200716_ehkkii3l.jpg" width="230" height="230">
+                    </a>
+
+                </td>
+            </tr>
+        </fieldset>
+        <br><br>
+            <button class="btn btn-danger ">Limpar</button>
+            <button class="btn btn-success">Cadastrar</button>
+       </form>
     
 </body>
 </html>

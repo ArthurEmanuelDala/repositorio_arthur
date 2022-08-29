@@ -1,0 +1,135 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 230px;
+    border: 3px solid darkblue;
+    color: black;
+    margin: 0 auto;
+    background: linear-gradient(120deg, black 0%, aquamarine 100%);
+    transition: 3s;
+}
+
+input{
+    border: 2px solid black;
+}
+.btn-cad{
+    background-color: green;
+    position: relative;
+    left: 20ppx;
+    padding: 5px;
+    margin-top: 20px;
+}
+.btn-can{
+    background-color: red;
+    position: relative;
+    right: 20ppx;
+    padding: 5px;
+    margin-top: 20px;
+}
+.grow:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.shrink:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.elemento{
+    background: orange;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    animation-timing-function: 3s unset;
+    animation-delay: 1000ms;
+    position: relative;
+    left: 400px;
+    bottom: 600px;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 220px;
+        border: 3px solid blue;
+        color: aliceblue;
+        margin: 0 auto;
+        background: radial-gradient(circle, rgb(107, 25, 25) 0%, rgb(55, 18, 156) 100%);
+    }
+    input{
+        border: 2px solid black;
+    }
+    .btn-cad{
+        background-color: green;
+        position: relative;
+        left: 20ppx;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .btn-can{
+        background-color: red;
+        position: relative;
+        right: 20ppx;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .grow:hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .shrink:hover{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+
+} 
+    @media screen and (max-width: 899px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 220px;
+            border: 3px solid blue;
+            color: aliceblue;
+            margin: 0 auto;
+            background: radial-gradient(circle, rgb(34, 18, 71) 0%, rgba(163, 8, 112, 0.322) 100%);
+        }
+
+        input{
+            border: 2px solid black;
+        }
+        .btn-cad{
+            background-color: green;
+            position: relative;
+            left: 20ppx;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        .btn-can{
+            background-color: red;
+            position: relative;
+            right: 20ppx;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        .grow:hover{
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        
+        .shrink:hover{
+            -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+}
