@@ -1174,7 +1174,7 @@ ul.social_icont li a {
 
 .contact {
      padding-top: 80px;
-     background: #fff;
+     background: rgb(64, 65, 150);
 }
 
 .contact .titlepage {
@@ -1190,10 +1190,10 @@ ul.social_icont li a {
      width: 100%;
      height: 55px;
      background: transparent;
-     color: #363636;
+     color: #0e0e0e;
      font-size: 18px;
      font-weight: normal;
-     border-bottom: #003471 solid 1px !important;
+     border-bottom: #534807 solid 1px !important;
      border: inherit;
 }
 
@@ -1201,12 +1201,12 @@ ul.social_icont li a {
      margin-bottom: 20px;
      width: 100%;
      background: transparent;
-     color: #363636;
+     color: #0e0e0e;
      font-size: 18px;
      font-weight: normal;
      padding-top: 10px;
      height: 150px;
-     border-bottom: #003471 solid 1px !important;
+     border-bottom: #534807 solid 1px !important;
      border: inherit;
 }
 
@@ -1233,7 +1233,7 @@ ul.social_icont li a {
 }
 
 #post_form *::placeholder {
-     color: #363636;
+     color: #0e0e0e;
      opacity: 1;
 }
 
