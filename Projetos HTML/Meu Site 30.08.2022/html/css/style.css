@@ -443,7 +443,7 @@ ul.conta_icon li a:hover {
 }
 
 .header_bo {
-      background: linear-gradient(120deg, rgb(0, 0, 0) 20%, #726100 100%);
+     background: linear-gradient(120deg, rgb(0, 0, 0) 20%, #726100 100%);
      width: 100%;
      height: 70px;
 }
@@ -469,7 +469,7 @@ ul.conta_icon li a:hover {
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
      color: #ffffff;
-     background-color: #f2db18;
+     background-color: rgb(64, 65, 150);
 }
 
 .navigation.navbar-dark .navbar-nav .active>.nav-link,
@@ -477,7 +477,7 @@ ul.conta_icon li a:hover {
 .navigation.navbar-dark .navbar-nav .nav-link.show,
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
      color: #ffffff;
-     background-color: #f2db18;
+     background-color: rgb(64, 65, 150);
 }
 
 .navbar-expand-md .navbar-nav {
@@ -501,7 +501,7 @@ ul.sign li a i {
 .sign_btn {
      float: right;
      max-width: 161px;
-     background: #f2db18;
+     background: #726100;
      font-size: 17px !important;
      width: 100%;
      text-align: center;
@@ -512,7 +512,7 @@ ul.sign li a i {
 }
 
 .sign_btn:hover {
-     background-color: #000;
+     background-color: rgb(64, 65, 150);
 }
 
 
@@ -520,9 +520,10 @@ ul.sign li a i {
 
 .banner_main {
      padding: 60px 0 0px 0;
-     background: url(../images/banner.jpg);
+     background: url(../images/viagem.jpg);
      background-size: 100% 100%;
      background-repeat: no-repeat;
+     size: 100px;
 }
 
 .text-bg {
@@ -554,31 +555,6 @@ ul.sign li a i {
      font-size: 17px;
 }
 
-.text-bg a {
-     font-size: 25px;
-     color: #fff;
-     font-weight: 600;
-     text-align: left;
-     display: inline-block;
-     transition: ease-in all 0.5s;
-     position: relative;
-     line-height: 1px;
-}
-
-.text-bg a::before {
-     position: absolute;
-     content: "";
-     top: 3px;
-     border-right: #ffff00 solid 1px;
-     border-width: 90px;
-     height: 1px;
-     right: -111px;
-}
-
-.text-bg a:hover {
-     color: #fff;
-     transition: ease-in all 0.5s;
-}
 
 .ban_img figure {
      margin: 0;
@@ -594,7 +570,7 @@ ul.sign li a i {
 
 .titlepage h2 {
      font-size: 36px;
-     color: #154492;
+     color: #fff;
      line-height: 45px;
      font-weight: bold;
      padding: 0;
@@ -622,36 +598,12 @@ ul.sign li a i {
      flex-wrap: wrap;
 }
 
-.read_more {
-     font-size: 25px;
-     color: #fff !important;
-     text-align: left;
-     display: inline-block;
-     border-radius: 10px;
-     font-weight: 500;
-     position: relative;
-     padding: 0;
-     line-height: 1px;
-     max-width: 140px;
-     width: 100%;
-}
-
-.read_more::before {
-     position: absolute;
-     content: "";
-     top: 1px;
-     border-right: #ddd solid 1px;
-     border-width: 90px;
-     height: 1px;
-     right: -111px;
-}
-
 
 /** about section **/
 
 .about {
      padding-top: 90px;
-     background-color: #fff;
+     background: linear-gradient(120deg, rgb(0, 0, 0) 20%, #726100 100%);
 }
 
 .about .titlepage {
@@ -679,7 +631,7 @@ ul.sign li a i {
 }
 
 .about_box h3 {
-     color: #0b0b0b;
+     color: #fff;
      font-size: 25px;
      font-weight: bold;
      padding: 0;
@@ -706,35 +658,13 @@ ul.sign li a i {
      padding-top: 25px;
      line-height: 30px;
      text-align: left;
-     color: #0d0d0d;
+     color: #fff;
      display: inline-block;
      padding-bottom: 30px;
 }
 
 .margin_bottom2 {
      margin-bottom: 30px;
-}
-
-.about .read_morea {
-     margin-top: 7px;
-     padding: 8px 0;
-     margin-left: 40px;
-     background-color: #f2db18;
-     max-width: 168px;
-     width: 100%;
-     display: inline-block;
-     text-align: center;
-     font-size: 18px;
-     color: #fff;
-     font-weight: 600;
-}
-
-.about .read_morea i {
-     padding-left: 5px;
-}
-
-.about .read_morea:hover {
-     background-color: #000;
 }
 
 
@@ -744,7 +674,7 @@ ul.sign li a i {
 /** service section **/
 
 .service {
-     background-color: #fff;
+     background-color: rgb(64, 65, 150);
      padding-top: 80px;
 }
 
@@ -758,7 +688,7 @@ ul.sign li a i {
 
 .service .service_box h3 {
      margin-top: 20px;
-     color: #323639;
+     color: #000000;
      font-size: 17px;
      font-weight: 700;
      line-height: 20px;
@@ -770,7 +700,7 @@ ul.sign li a i {
 }
 
 .service .service_box p {
-     color: #323639;
+     color: #000000;
      font-size: 17px;
      padding-top: 15px !important;
      padding: 0;
@@ -782,23 +712,6 @@ ul.sign li a i {
      color: #f2db18;
      border-bottom: #f2db18 solid 3px;
 }
-
-.service .read_more {
-     color: #f2db18 !important;
-     margin: 0 auto;
-     max-width: 140px;
-     width: 100%;
-     display: block;
-     display: table;
-     margin-top: 40px;
-}
-
-.service .read_more::before {
-     border-right: #f2db18 solid 1px;
-     border-right-width: 1px;
-     border-width: 90px;
-}
-
 
 /** end service section **/
 
@@ -815,18 +728,18 @@ ul.sign li a i {
 }
 
 .portfolio .titlepage h2 {
-     color: #040300;
+     color: #fff;
 }
 
 .portfolio .titlepage span {
-     color: #040300;
+     color: #fff;
      font-size: 17px;
      line-height: 28px;
      font-weight: 600;
 }
 
 .portfolio .titlepage p {
-     color: #434343;
+     color: #fff;
      font-size: 17px;
      line-height: 28px;
      padding-top: 15px;
@@ -914,22 +827,6 @@ ul.sign li a i {
      color: #fff;
 }
 
-.portfolio .read_more {
-     color: #f2db18 !important;
-     margin: 0 auto;
-     max-width: 140px;
-     width: 100%;
-     display: block;
-     display: table;
-     margin-top: 40px;
-}
-
-.portfolio .read_more::before {
-     border-right: #f2db18 solid 1px;
-     border-right-width: 1px;
-     border-width: 90px;
-}
-
 
 /** end portfolio section **/
 
@@ -937,7 +834,7 @@ ul.sign li a i {
 /** business section **/
 
 .business {
-     background: #fff;
+     background: url(../images/viagem.jpg);
      padding-top: 80px;
 }
 
@@ -946,7 +843,7 @@ ul.sign li a i {
 }
 
 .business .titlepage p {
-     color: #6f6f6e;
+     color: #fff;
      padding-top: 10px;
 }
 
@@ -973,17 +870,6 @@ ul.sign li a i {
      font-size: 19px;
      font-weight: bold;
 }
-
-.business .read_more {
-     color: #f2db18 !important;
-     margin-top: 60px;
-}
-
-.business .read_more::before {
-     border-right: #f2db18 solid 1px;
-     border-width: 90px;
-}
-
 
 /** end business section **/
 
@@ -1099,7 +985,7 @@ ul.social_icont li a {
 
 .testimonial {
      padding-top: 90px;
-     background-color: #fff;
+     background: linear-gradient(120deg, rgb(0, 0, 0) 20%, #726100 100%);
 }
 
 .testimonial .titlepage {
@@ -1107,7 +993,7 @@ ul.social_icont li a {
 }
 
 .testimonial .titlepage h2 {
-     color: #1d1d1d;
+     color: #fff;
 }
 
 .testimonial .testimonial_Carousel .carousel-caption {
@@ -1135,7 +1021,7 @@ ul.social_icont li a {
      font-size: 16px;
      padding: 20px;
      line-height: 28px;
-     color: #383737;
+     color: #fff;
      text-align: left;
      border: #f2db18 solid 1px;
      display: inline-block;
@@ -1174,7 +1060,7 @@ ul.social_icont li a {
 
 .contact {
      padding-top: 80px;
-     background: rgb(64, 65, 150);
+     background: url(../images/viagem.jpg);
 }
 
 .contact .titlepage {
@@ -1332,7 +1218,7 @@ ul.link_icon li {
 }
 
 ul.link_icon li.active a {
-     color: #acaba9;
+     color: #fff;
 }
 
 ul.link_icon li a {
