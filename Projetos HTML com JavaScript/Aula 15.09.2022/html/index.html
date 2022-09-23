@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Aula javascript</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+
+<body>
+    <!--Disparando Eventos-->
+    <button type="button" onclick="alert('Bem vindo')">Clique Aqui</button>
+    
+    <!--Atributo Global ID-->
+    <p id="paragrafo">Olá</p>
+    <button type="button" onclick="fAlterar();">Alterar</button>
+    <br><br>
+    <p><img id="imgLamp" src="../img/lampada2.gif" alt=""></p>
+    <button id="btnInter" type="button" onclick="inter();">Ligar</button>
+    <br><br>
+    <fieldset>
+        <legend>Calculos Matematicos</legend>
+        <input type="text" id="v1">
+        <br><br>
+        <input type="text" id="v2">
+        <br><br>
+        <p id="res">Resposta:</p>
+        <button type="reset" onclick="limpar();">Limpar</button>
+        <button type="button" onclick="soma();">+</button>
+        <button type="button" onclick="subtracao();">-</button>
+        <button type="button" onclick="multiplicacao();">x</button>
+        <button type="button" onclick="divisao();">÷</button>
+        <button type="button" onclick="resDiv();">R%</button>
+        <button type="button" onclick="porcento();">%</button>
+    </fieldset>
+</body>
+</html>
