@@ -680,6 +680,7 @@ ul.sign li a i {
 
 .service .service_box {
      margin-bottom: 30px;
+     cursor: pointer;
 }
 
 .service .service_box img {

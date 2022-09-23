@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Revisão</title>
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">  
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="intro">
+        <h1>CSS - Revisão</h1>
+        <h2>Utilizando HTML5 com CSS</h2>
+        <h3>Com o uso do CSS tornamos o projeto muito mais Estiloso e elegante</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#other">Article</a></li>
+            <li><a href="#another">Archives</a></li>
+            <li><a href="#">Apress</a></li>
+        </ul>
+    </nav>
+    <!--Area de Conteudo-->
+    <div id="contentArea">
+        <div id="mainContent">
+            <!--Seção Principal-->
+            <section class="rounded">
+                <header>
+                    <h2>Conteudo Principal</h2>
+                </header>
+                <p>A Team Vacation faz tudo por uma boa viagem. Por isso trabalha para transformar essa experiência na melhor conquista de sua vida, 
+                    através de novas tendências e ampla rede de produtos e serviços turísticos. 
+                    É essa forma de pensar que estabelece a Team Vacation como a maior operadora de turismo da América Latina.</p>
+            </section>
+            <section>
+                <article class="featureContent">
+                    <a id="feature"></a>
+                    <header>
+                        <h2>Featured Article</h2>
+                    </header>
+                    <!--Rotação-->
+                    <div class="rotateContainer">
+                        <p>Team Vacation</p>
+                        <img src="img/blz2.png" width="85px" height="85px" class="rotate">
+                        <input type="range" min="-180" max="180" value="0" step="18" onchange="rotateImage(this.value)">
+                        <br>
+                        <p> A Team Vacation faz tudo por uma boa viagem. Por isso trabalha para transformar essa experiência na melhor conquista de sua vida, 
+                            através de novas tendências e ampla rede de produtos e serviços turísticos. 
+                            É essa forma de pensar que estabelece a Team Vacation como a maior operadora de turismo da América Latina.
+                        </p>
+                        <p>A Team Vacation faz tudo por uma boa viagem. Por isso trabalha para transformar essa experiência na melhor conquista de sua vida, 
+                            através de novas tendências e ampla rede de produtos e serviços turísticos. 
+                            É essa forma de pensar que estabelece a Team Vacation como a maior operadora de turismo da América Latina.
+                        </p>
+                    </div>
+                </article>
+                <!--Outro conteúdo-->
+                <article class="otherContent">
+                    <a id="other"></a>
+                    <header>
+                        <h3>Bordas arredondadas</h3>
+                    </header>
+                    <div>
+                        <p>Detalhes sobre Bordas</p>
+                        <p>2000 - Inaugurada a primeira Loja Virtual de Turismo do Brasil
+                            | Agosto de 2000 | Inaugurada a primeira Loja Virtual de Turismo do Brasil. 
+                            No ano seguinte, em 2001, a loja virtual CVC ganhara novo layout e novas funcionalidades. Em setembro de 2000, 
+                            a CVC anunciara temporada de fretamentos, com 100 voos fretados pela operadora, por semana, com a TAM, partindo do interior do Estado de São Paulo, para o Nordeste.
+                            Como parte de sua contribuição para o desenvolvimento do turismo brasileiro, o então Workshop Profissional CVC, que acontecia anualmente na Bienal de São Paulo, passou a ser realizado, no ano de 2000, no Expo Center Norte. 
+                            A sexta edição do evento "Workshop CVC" recebeu oito mil agentes de viagens de todo o Brasil e contou com 120 expositores. Em 2012, na 18ª edição deste evento, que é exclusivo para profissionais de turismo,
+                             mais de 10 mil agentes de viagens e 700 fornecedores do Brasil e de 20 países marcaram presença.
+                        </p>
+                        <p>A Team Vacation faz tudo por uma boa viagem. Por isso trabalha para transformar essa experiência na melhor conquista de sua vida, 
+                            através de novas tendências e ampla rede de produtos e serviços turísticos. 
+                            É essa forma de pensar que estabelece a Team Vacation como a maior operadora de turismo da América Latina.
+                        </p>
+                    </div>
+                </article>
+                <article class="otherContent">
+                    <a id="another"></a>
+                    <header>
+                        <h3>Outros Assuntos</h3>
+                    </header>
+                    <div>
+                        <p>Outros Interesses</p>
+                        <p>2000 - Inaugurada a primeira Loja Virtual de Turismo do Brasil
+                            | Agosto de 2000 | Inaugurada a primeira Loja Virtual de Turismo do Brasil. 
+                            No ano seguinte, em 2001, a loja virtual CVC ganhara novo layout e novas funcionalidades. Em setembro de 2000, 
+                            a CVC anunciara temporada de fretamentos, com 100 voos fretados pela operadora, por semana, com a TAM, partindo do interior do Estado de São Paulo, para o Nordeste.
+                            Como parte de sua contribuição para o desenvolvimento do turismo brasileiro, o então Workshop Profissional CVC, que acontecia anualmente na Bienal de São Paulo, passou a ser realizado, no ano de 2000, no Expo Center Norte. 
+                            A sexta edição do evento "Workshop CVC" recebeu oito mil agentes de viagens de todo o Brasil e contou com 120 expositores. Em 2012, na 18ª edição deste evento, que é exclusivo para profissionais de turismo,
+                             mais de 10 mil agentes de viagens e 700 fornecedores do Brasil e de 20 países marcaram presença.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            </div>
+            <aside id="sidebar">
+                <h3>Outros Titulos</h3>
+                <div id="moon"></div>
+                <p>Cheque a Seção Apress para mais titulos disponiveis</p>
+                <section id="titles">
+                    <article class="book">
+                        <header>
+                            <a href="http://www.apress.com/9781430240747"><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4302-4075-4?as=webp" alt=""></a>
+                        </header>
+                        <p>
+                            A Team Vacation faz tudo por uma boa viagem. Por isso trabalha para transformar essa experiência na melhor conquista de sua vida, 
+                            através de novas tendências e ampla rede de produtos e serviços turísticos. 
+                            É essa forma de pensar que estabelece a Team Vacation como a maior operadora de turismo da América Latina.
+                        </p>
+                    </article>
+                    <article class="book">
+                        <header>
+                            <a href="http://www.apress.com/9781430240747"><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4302-4075-4?as=webp" alt=""></a>
+                        </header>
+                        <p>
+                            A Team Vacation faz tudo por uma boa viagem. Por isso trabalha para transformar essa experiência na melhor conquista de sua vida, 
+                            através de novas tendências e ampla rede de produtos e serviços turísticos. 
+                            É essa forma de pensar que estabelece a Team Vacation como a maior operadora de turismo da América Latina.
+                        </p>
+                    </article>
+                    <article class="book">
+                        <header>
+                            <a href="http://www.apress.com/9781430240747"><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4302-4075-4?as=webp" alt=""></a>
+                        </header>
+                        <p>
+                            A Team Vacation faz tudo por uma boa viagem. Por isso trabalha para transformar essa experiência na melhor conquista de sua vida, 
+                            através de novas tendências e ampla rede de produtos e serviços turísticos. 
+                            É essa forma de pensar que estabelece a Team Vacation como a maior operadora de turismo da América Latina.
+                        </p>
+                    </article> 
+                    <article class="book">
+                        <header>
+                            <a href="http://www.apress.com/9781430240747"><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4302-4075-4?as=webp" alt=""></a>
+                        </header>
+                        <p>
+                            A Team Vacation faz tudo por uma boa viagem. Por isso trabalha para transformar essa experiência na melhor conquista de sua vida, 
+                            através de novas tendências e ampla rede de produtos e serviços turísticos. 
+                            É essa forma de pensar que estabelece a Team Vacation como a maior operadora de turismo da América Latina.
+                        </p>
+                    </article> 
+                    <article class="book">
+                        <header>
+                            <a href="http://www.apress.com/9781430240747"><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4302-4075-4?as=webp" alt=""></a>
+                        </header>
+                        <p>
+                            A Team Vacation faz tudo por uma boa viagem. Por isso trabalha para transformar essa experiência na melhor conquista de sua vida, 
+                            através de novas tendências e ampla rede de produtos e serviços turísticos. 
+                            É essa forma de pensar que estabelece a Team Vacation como a maior operadora de turismo da América Latina.
+                        </p>
+                    </article>    
+                </section>              
+            </aside>
+        </div>
+        <footer>
+            <p>
+                Last update <time datetime="2022-09-09T08:38:22-03:00">Set 09 2022</time>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
