@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="selectForm">
+        <p>
+            <label for="tipoMusica">Escolha algum genêro de música seguir e clique no botão:</label>
+            <select name="tipoMusica" id="tipoMusica" multiple="multiple">
+                <option selected="selected">--Selecione--</option>
+                <option>R&B</option>
+                <option>Jazz</option>
+                <option>Blues</option>
+                <option>New Age</option>
+                <option>Clássica</option>
+                <option>Ópera</option>
+            </select>
+        </p>
+        <p><input type="btn" id="btn" value="Quantos foram selecionados?"></p>
+    </form>
+    <br>
+    <div id="exemplo"></div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
