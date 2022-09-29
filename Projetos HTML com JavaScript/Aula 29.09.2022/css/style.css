@@ -1,0 +1,17 @@
+body{
+    font: 12pt arial;
+}
+
+h1, h2, h3{
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+}
+
+button{
+    background-color: lightblue;
+    font-size: 12pt;
+    padding: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serifx;
+}
