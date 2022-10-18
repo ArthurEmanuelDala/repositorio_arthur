@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\Alunos\Documents\GitHub\repositorio_arthur\Eclipse Arthur\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1186970922.index
+\Aula18.10.2022\src\main\java
+C:\Users\Alunos\Documents\Eclipse Arthur\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1186970922.index
+\Aula18.10.2022\src\main\java
