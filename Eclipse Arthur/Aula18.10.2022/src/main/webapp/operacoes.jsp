@@ -14,8 +14,8 @@
 		
 		String oper = request.getParameter("btn");
 		
-		if (oper.equals("+"))
-			total = num1+num2;
+		if(oper.equals("+"))
+				total = num1+num2;
 		else
 			if (oper.equals("-"))
 				total = num1-num2;
@@ -32,8 +32,7 @@
 							if (oper.equals("R%"))
 								total = num1 % num2;
 		
-		out.pritln("<div class 'resultado' <h2> O Resultado é: " + total+"</h2></div>");
+		out.println("<div class 'resultado'> <h2> O Resultado é: " + total+"</h2></div>");
 	%>
-	
 </body>
 </html>

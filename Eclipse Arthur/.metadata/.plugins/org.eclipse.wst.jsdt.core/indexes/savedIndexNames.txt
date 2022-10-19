@@ -1,8 +1,3 @@
 INDEX VERSION 1.4+C:\Users\Alunos\Documents\GitHub\repositorio_arthur\Eclipse Arthur\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3423305630.index
-3795370040.index
 176549021.index
-1186970922.index
-1027874518.index
-1086547519.index
-3167279754.index
+503249118.index
