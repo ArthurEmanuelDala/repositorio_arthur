@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Meu Primeiro JSP</title>
+</head>
+<body>
+	<%
+	String nome = "Arthur Emanuel";
+	out.println(nome);
+	%>
+	<h1>18 de Outubro de 2022</h1>
+	
+	<form action="home.jsp" method="post">
+		<input type="text" name="vlr1">
+		<input type="text" name="vlr2">
+		<input type="submit" value="Realizar 4 operações">
+	</form>
+	<h2>
+		<%
+			if(request.getMethod().equals("POST")){
+				double n1 = Double.parseDouble(request.getParameter("vlr1"));
+				double n2 = Double.parseDouble(request.getParameter("vlr2"));
+				double soma = n1+n2;
+				out.println("A Soma é "+ soma);
+			}
+		%>
+	</h2>
+	
+	<h2>
+		<%
+			if(request.getMethod().equals("POST")){
+				double n1 = Double.parseDouble(request.getParameter("vlr1"));
+				double n2 = Double.parseDouble(request.getParameter("vlr2"));
+				double subtrair = n1-n2;
+				out.println("A Subtração é "+ subtrair);
+			}
+		%>
+	</h2>
+	
+	<h2>
+		<%
+			if(request.getMethod().equals("POST")){
+				double n1 = Double.parseDouble(request.getParameter("vlr1"));
+				double n2 = Double.parseDouble(request.getParameter("vlr2"));
+				double multiplicar = n1*n2;
+				out.println("A Multipliação é "+ multiplicar);
+			}
+		%>
+	</h2>
+	
+	<h2>
+		<%
+			if(request.getMethod().equals("POST")){
+				double n1 = Double.parseDouble(request.getParameter("vlr1"));
+				double n2 = Double.parseDouble(request.getParameter("vlr2"));
+				double dividir = n1-n2;
+				out.println("A Divisão é "+ dividir);
+			}
+		%>
+	</h2>
+	
+</body>
+</html>
